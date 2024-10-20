@@ -8,6 +8,10 @@ terraform {
   }
 }
 
+module "vars" {
+  source = "../vars"
+}
+
 provider "aws" {
   region  = "us-east-2"
   profile = "hemstreet"
