@@ -30,7 +30,7 @@ provider "kubernetes" {
 }
 
 provider "kubectl" {
-  config_path = local.k8s.config_path
+  config_path    = local.k8s.config_path
   config_context = local.k8s.context
 }
 
